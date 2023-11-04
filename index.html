@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Website-Charles</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- linking css file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Charles</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                    <h2 class="hero_title">Hi, it's me charles</h2>
+                    <p class="hero_desc">I am a Junior software developer base in Sheffield</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.jpg" class="imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> Ambitious graduate developer brings enthusiasm and detailed understanding of various programming languages to
+                        webpage planning, development and maintenance. Experience designing and developing sites from concept to roll out.
+                        Foundational grasp of various Javascript ,CSS and HTML options, development platforms and security requirements
+                        .I have lived in three different countries (Ghana, Italy, and United Kingdom), speak 3 languages fluently and feel
+                        emotionally and culturally attached to all of them thus helping me work in a diverse working environment therefore,
+                        it has helped me to build up my confidence and hopefully will carry on.
+                    
+                    </p>
+                    <div class="row mt-3"> 
+                         <h1>Experience</h1>
+                        <div class="col-md-6">
+                          <p><strong>Yorkshire Electric Scooter - intern Sheffield
+                            06/2022 - 07/2022</strong></p>
+                            <ul>
+                                <li>Provided front-end website development using WordPress,
+                                    Hubspot, and other editing software</li>
+                                <li>Determined coding requirements for specialized scripts.
+                                   </li>
+                                <li> Applied emerging technologies to update and maintain site</li>
+                                <li>Coded websites using HTML, CSS, JavaScript, and jQuery
+                                    languages</li>   
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <p><b>Austin Consultant Intern -Software tester Sheffield
+                                07/2022 - 08/2022</b>
+                            </p>
+                            <ul>
+                                <li>Wrote and executed effective functional tests and carried out
+                                    exploratory testing to assess product performance</li>
+                                    <li>Read, interpreted and followed written test instructions and
+                                        procedures to accurately test products.</li>
+                                        <li>Checked color, shape, texture and grade of products and materials
+                                            against established templates, charts, and samples</li>
+                                            <li>Planned and estimated test activities to determine effort needed to
+                                                validate quality of product under test.
+                                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row md-6">
+                        <p> <b>Sheffield hallam university
+                            09/2019 - 06/2022</b>
+                        </p>
+                        <ul>
+                            <li>build an online farmers training using C# and .net</li>
+                            <li>Collaborated in groups working in an Agile ans scrum environment as well as individually on projects such as building APIs and full-stack web applications</li>
+                            <li>Made CRUD API using Node.js, Express.js and MongoDB/Mongoose</li>
+                            <li>Created full-stack applications in React consuming APIs such as Library website </li>
+                            <li>Build a mobile cross platforms app as final year project using react native </li>
+                        </ul>
+                    </div>
+                    <div class="row md-6">
+                        <p> <b>Complete Web Developer bootcamp on udemy
+                            09/2022 - 02/2023</b>
+                        </p>
+                        <ul>
+                            <li>building web application using HTML CSS , javascript and bootstrap</li>
+                            <li>Build a todo list app using javascript, ejs, node js, express js and npm packages </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/readbookonline.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"> library Website App</h4>
+                            <p class="card-text">Online library to loan a book.
+                                user can request book that are available and admins can add news books in the library. Created using MERN stack
+                            </p>
+                            <div class="text-center">
+                                <a href="https://github.com/charles3019/readbooksonline.git" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/TodoAPP.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">To Do list App</h4>
+                            <p class="card-text">To do list app list app good for planning.App creted using Ejs node and express packages </p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Smart Tool charging -system</h4>
+                            <p class="card-text">System created for collecting  vehicle data and charging them</p>
+                            <div class="text-center">
+                                <a href="https://github.com/yassa27/Smart-Toll-Charging-System.git" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <video class="card-img-top " width="320" height="240" controls>
+                            <source src="video/drumkit.mp4" type="video/mp4">
+  
+Your browser does not support the video tag.
+                        </video>
+                        <div class="card-body">
+                            <h4 class="card-title"> Drum Kit App </h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+<div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"> Online farmer- Training</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title"> Disney + clone</h4>
+                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                                industry.Work in progress</p>
+                            <div class="text-center">
+                                <a href="https://github.com/charles3019/Online-Farmers-Training.git" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+
+                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+                        <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                                style="height:100%;width:100%;border:0;" frameborder="0"
+                                src="https://www.google.com/maps/embed/v1/place?q=Sheffield,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                        </div><a class="googlemaps-made" href="https://kbj9qpmy.com/bp"
+                            id="make-map-infor-mation">Internet Provider</a>
+                        <style>
+                            #embedded-map-display .text-marker {
+                                display: inline;
+                            }
+
+                            .map-generator {
+                                max-width: 100%;
+                                max-height: 100%;
+                                background: none;
+                            }
+                        </style>
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <form action="#" method="post">
+                        <label></label>
+                        <input type="text" class="form-control form-control-lg" placeholder="Name">
+                        <input type="email" class="form-control mt-3" placeholder="Email">
+                        <input type="text" class="form-control mt-3" placeholder="Subject">
+                        <div class="mb-3 mt-3">
+                            <textarea class="form-control" rows="5" id="comment" name="text"
+                                placeholder="Project Details"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-success mt-3" onclick="validateForm()">Contact Me</button>
+                    </form>
+                    
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/charles-agyemang-311020109/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/charles3019" target="_blank"><i class="fab fa-github"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+
+</body>
+
+</html>
