@@ -2,295 +2,404 @@
 <html lang="en">
 
 <head>
-    <title>Portfolio Website-Charles</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- linking css file -->
-    <link rel="stylesheet" href="style.css">
-    <!-- bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- font awesome -->
-    <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Web developer | charles Agyemang</title>
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
-        <div class="container">
-            <a class="navbar-brand" href="#">Charles</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-
-            </div>
+  <header class="header">
+    <div class="header__socials">
+      <a href="#"><i class="ri-mail-fill"></i></a>
+      <a href="#"><i class="ri-github-fill"></i></a>
+      <a href="#"><i class="ri-linkedin-fill"></i></a>
+    </div>
+    <nav>
+      <div class="nav__bar">
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">A<span>.</span></a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <span><i class="ri-menu-3-line"></i></span>
+          </div>
         </div>
+        <ul class="nav__links" id="nav-links">
+          <li class="link"><a href="#home">Home</a></li>
+          <li class="link"><a href="#about">About</a></li>
+          <li class="link"><a href="#project">Projects</a></li>
+          <li class="link"><a href="#service">Services</a></li>
+          <li class="link"><a href="#client">Clients</a></li>
+          <li class="link"><a href="#blog">Blog</a></li>
+          <li class="link btn"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <!-- main banner -->
-    <section class="bgimage" id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
-                    <h2 class="hero_title">Hi, it's me charles</h2>
-                    <p class="hero_desc">I am a Junior Web developer base in Sheffield</p>
-                </div>
+    <div class="section__container header__container" id="home">
+      <div class="header__image">
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h4>Creating Digital Masterpiece</h4>
+        <h1>Hi there! I'm Charles Agyemang. a passionate web developer </h1>
+        <p>
+          I am a dedicated web developer with a creative touch, transforming code into engaging online experiences. My
+          journey in the digital world started years ago, and I've since refined my expertise in both front-end and
+          back-end development.
+        </p>
+        <button class="btn">Hire Me Now</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="assets/about.jpg" alt="about" />
+    </div>
+    <div class="about__content">
+      <h2 class="section__header">Hi There I Am Charles </h2>
+      <p>
+        I am a graduate software engineer with a passion for crafting innovative and efficient solutions. My academic
+        journey provided me with a solid foundation in software development, and I've since expanded my skills in
+        various programming languages and technologies. I thrive on tackling complex problems and transforming ideas
+        into functional, user-friendly applications. With a strong focus on both front-end and back-end development, I
+        am dedicated to delivering high-quality software that meets the needs of users and businesses alike.
+      </p>
+      <h4>
+        With a focus on user experience and a commitment to staying current with the latest industry trends, I am
+        dedicated to developing web solutions that not only meet but surpass expectations.
+      </h4>
+      <div class="about__btns">
+        <a href="assets/Charles.agyemang.pdf" download class="download__btn">
+          Download CV
+        </a>
+        <a href="#"><i class="ri-mail-fill"></i></a>
+        <a href="#"><i class="ri-github-fill"></i></a>
+        <a href="#"><i class="ri-linkedin-fill"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container banner__container">
+    <div class="banner__card">
+      <span><i class="ri-pen-nib-line"></i></span>
+      <div>
+        <h4>Design</h4>
+        <p>
+          Our designers and content creators are committed to delivering
+          engaging digital content.
+        </p>
+      </div>
+    </div>
+    <div class="banner__card">
+      <span><i class="ri-layout-masonry-line"></i></span>
+      <div>
+        <h4>Development</h4>
+        <p>
+          We stay at forefront of technological advancements, ensuring your
+          digital presence performant.
+        </p>
+      </div>
+    </div>
+    <div class="banner__card">
+      <span><i class="ri-checkbox-line"></i></span>
+      <div>
+        <h4>Testing & QA</h4>
+        <p>
+          We understand that your digital presence should not just look good,
+          it should deliver traffic & engagement.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container project__container" id="project">
+    <div class="project__header">
+      <h2 class="section__header">Our Projects</h2>
+      <div class="project__nav">
+        <button class="btn project__btn mixitup-control-active" data-filter="all">
+          All
+        </button>
+        <button class="btn project__btn" data-filter=".web">Web Apps</button>
+        <button class="btn project__btn" data-filter=".game">Games</button>
+        <button class="btn project__btn" data-filter=".design">
+          Designs
+        </button>
+      </div>
+    </div>
+    <div class="project__grid">
+      <div class="project__card mix web">
+        <img src="assets/project-1.jpg" alt="project" />
+      </div>
+      <div class="project__card mix game">
+        <img src="assets/project-2.jpg" alt="project" />
+      </div>
+      <div class="project__card mix design">
+        <img src="assets/project-3.jpg" alt="project" />
+      </div>
+      <div class="project__card mix web">
+        <img src="assets/project-4.jpg" alt="project" />
+      </div>
+      <div class="project__card mix game">
+        <img src="assets/project-5.jpg" alt="project" />
+      </div>
+      <div class="project__card mix design">
+        <img src="assets/project-6.jpg" alt="project" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container service__container" id="service">
+    <p class="section__subheader">Our Services</p>
+    <h2 class="section__header">What We Do?</h2>
+    <p class="section__description">
+      We specialize in a wide range of web development services designed to
+      transform your vision into reality.
+    </p>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class="ri-window-fill"></i></span>
+        <h4>Website Design</h4>
+        <p>
+          We craft user-friendly interfaces that engage visitors and help you
+          achieve your online goals with minimum efforts.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-store-line"></i></span>
+        <h4>E-commerce Solutions</h4>
+        <p>
+          We build secure, scalable, and user-centric online stores that
+          enhance the shopping experience and drive conversions.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-smartphone-line"></i></span>
+        <h4>Mobile Development</h4>
+        <p>
+          From iOS to Android, we create apps that deliver seamless
+          performance and keep users coming back for more.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-share-fill"></i></span>
+        <h4>Content Marketing</h4>
+        <p>
+          Our services include creating blog posts, videos, and social media
+          content that drives traffic and engagement.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-seo-line"></i></span>
+        <h4>SEO</h4>
+        <p>
+          Our SEO strategies are tailored to your specific goals, helping you
+          reach your target audience and grow your online presence.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-share-circle-line"></i></span>
+        <h4>Digital Marketing</h4>
+        <p>
+          From pay-per-click (PPC) advertising to social media marketing, we
+          ensure your brand stands out in the crowded digital landscape.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container client__container" id="client">
+    <p class="section__subheader">Testimonials</p>
+    <h2 class="section__header">What Our Clients Say About Us</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/client-1.jpg" alt="client" />
+            <div>
+              <p>
+                They transformed our online presence with their SEO and
+                content marketing services. Our website now ranks higher in
+                search results, and the quality of leads has improved
+                substantially. I highly recommend their digital marketing
+                expertise.
+              </p>
+              <h4>John Miller <span>CEO, Corporation</span></h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
             </div>
+          </div>
         </div>
-    </section>
-
-    <!-- about section-->
-    <section id="about">
-        <div class="container mt-4 pt-4">
-            <h1 class="text-center">About Me</h1>
-            <div class="row mt-4">
-                <div class="col-lg-4">
-                    <img src="images/about.jpg" class="imageAboutPage" alt="">
-                </div>
-
-                <div class="col-lg-8">
-                    <p> Ambitious graduate developer brings enthusiasm and detailed understanding of various programming languages to
-                        webpage planning, development and maintenance. Experience designing and developing sites from concept to roll out.
-                        Foundational grasp of various Javascript ,CSS and HTML options, development platforms and security requirements
-                        .I have lived in three different countries (Ghana, Italy, and United Kingdom), speak 3 languages fluently and feel
-                        emotionally and culturally attached to all of them thus helping me work in a diverse working environment therefore,
-                        it has helped me to build up my confidence and hopefully will carry on.
-                    
-                    </p>
-                    <div class="row mt-3"> 
-                         <h1>Experience</h1>
-                        <div class="col-md-6">
-                          <p><strong>Yorkshire Electric Scooter - intern Sheffield
-                            06/2022 - 07/2022</strong></p>
-                            <ul>
-                                <li>Provided front-end website development using WordPress,
-                                    Hubspot, and other editing software</li>
-                                <li>Determined coding requirements for specialized scripts.
-                                   </li>
-                                <li> Applied emerging technologies to update and maintain site</li>
-                                <li>Coded websites using HTML, CSS, JavaScript, and jQuery
-                                    languages</li>   
-                            </ul>
-                        </div>
-
-                        <div class="col-md-6">
-                            <p><b>Austin Consultant Intern -Software tester Sheffield
-                                07/2022 - 08/2022</b>
-                            </p>
-                            <ul>
-                                <li>Wrote and executed effective functional tests and carried out
-                                    exploratory testing to assess product performance</li>
-                                    <li>Read, interpreted and followed written test instructions and
-                                        procedures to accurately test products.</li>
-                                        <li>Checked color, shape, texture and grade of products and materials
-                                            against established templates, charts, and samples</li>
-                                            <li>Planned and estimated test activities to determine effort needed to
-                                                validate quality of product under test.
-                                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row md-6">
-                        <p> <b>Sheffield hallam university
-                            09/2019 - 06/2022</b>
-                        </p>
-                        <ul>
-                            <li>Build an online farmers training using C# and .net</li>
-                            <li>Collaborated in groups working in an Agile ans scrum environment as well as individually on projects such as building APIs and full-stack web applications</li>
-                            <li>Made CRUD API using Node.js, Express.js and MongoDB/Mongoose</li>
-                            <li>Created full-stack applications in React consuming APIs such as Library website </li>
-                            <li>Build a mobile cross platforms app as final year project using react native </li>
-                        </ul>
-                    </div>
-                    <div class="row md-6">
-                        <p> <b>Complete Web Developer bootcamp on udemy
-                            09/2022 - 02/2023</b>
-                        </p>
-                        <ul>
-                            <li>Building web application using HTML CSS , javascript and bootstrap</li>
-                            <li>Build a todo list app using javascript, ejs, node js, express js and npm packages </li>
-                        </ul>
-                    </div>
-                </div>
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/client-2.jpg" alt="client" />
+            <div>
+              <p>
+                Working with them has been a game-changer for our business.
+                Their web development expertise helped us create a sleek and
+                responsive website that has significantly increased our online
+                sales. Their dedication and innovative solutions truly set
+                them apart.
+              </p>
+              <h4>Sarah Thompson <span>Marketing Director</span></h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+              </div>
             </div>
-    </section>
-
-    <!-- portfolio section-->
-    <section id="portfolio">
-        <div class="container mt-3">
-            <h1 class="text-center">Portfolio</h1>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card">
-                        <img class="card-img-top" src="images/readbookonline.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title"> library Website App</h4>
-                            <p class="card-text">Online library to loan a book.
-                                user can request book that are available and admins can add news books in the library. Created using MERN stack
-                            </p>
-                            <div class="text-center">
-                                <a href="https://github.com/charles3019/readbooksonline.git" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/TodoAPP.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">To Do list App</h4>
-                            <p class="card-text">To do list app list app good for planning.App creted using Ejs node and express packages </p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title">Smart Tool charging -system</h4>
-                            <p class="card-text">System created for collecting  vehicle data and charging them</p>
-                            <div class="text-center">
-                                <a href="https://github.com/yassa27/Smart-Toll-Charging-System.git" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/electric england.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title"> electric england website</h4>
-                            <p class="card-text">Develop this website using WordPress during my intern</p>
-                            <div class="text-center">
-                                <a href="https://electricengland.co.uk/" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-<div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title"> Online farmer- Training</h4>
-                            <p class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting
-                                industry.</p>
-                            <div class="text-center">
-                                <a href="#" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 mt-4">
-                    <div class="card portfolioContent">
-                        <img class="card-img-top" src="images/churchweb.png" alt="Card image" style="width:100%">
-                        <div class="card-body">
-                            <h4 class="card-title"> Church website</h4>
-                            <p class="card-text">Build a full-stack application using WordPress</p>
-                            <div class="text-center">
-                                <a href="https://pottershousesheffield.co.uk/" class="btn btn-success">Link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-            </div>
-    </section>
-
-    <!-- contact section-->
-    <section id="contact">
-        <div class="container mt-3 contactContent">
-            <h1 class="text-center">Contact Me</h1>
-
-            <div class="row mt-4">
-                <div class="col-lg-6">
-                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
-
-                    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
-                        <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
-                                style="height:100%;width:100%;border:0;" frameborder="0"
-                                src="https://www.google.com/maps/embed/v1/place?q=Sheffield,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                        </div><a class="googlemaps-made" href="https://kbj9qpmy.com/bp"
-                            id="make-map-infor-mation">Internet Provider</a>
-                        <style>
-                            #embedded-map-display .text-marker {
-                                display: inline;
-                            }
-
-                            .map-generator {
-                                max-width: 100%;
-                                max-height: 100%;
-                                background: none;
-                            }
-                        </style>
-                    </div>
-
-
-
-                </div>
-
-                <div class="col-lg-6">
-                    <!-- form fields -->
-                    <form action="#" method="post">
-                        <label></label>
-                        <input type="text" class="form-control form-control-lg" placeholder="Name">
-                        <input type="email" class="form-control mt-3" placeholder="Email">
-                        <input type="text" class="form-control mt-3" placeholder="Subject">
-                        <div class="mb-3 mt-3">
-                            <textarea class="form-control" rows="5" id="comment" name="text"
-                                placeholder="Project Details"></textarea>
-                        </div>
-                        <button type="button" class="btn btn-success mt-3" onclick="validateForm()">Contact Me</button>
-                    </form>
-                    
-
-                </div>
-
-            </div>
+          </div>
         </div>
-    </section>
-    <!-- footer section-->
-    <footer id="footer">
-        <div class="container-fluid">
-            <!-- social media icons -->
-            <div class="social-icons mt-4">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/_kwesi.c_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/in/charles-agyemang-311020109/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/charles3019" target="_blank"><i class="fab fa-github"></i></a>
-                
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/client-3.jpg" alt="client" />
+            <div>
+              <p>
+                Our digital marketing strategy needed a revamp, and they
+                delivered outstanding results. Their team's creative approach
+                to PPC campaigns and social media advertising has generated a
+                significant increase in our website traffic and conversions.
+              </p>
+              <h4>David Peterson <span>Marketing Manager</span></h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+              </div>
             </div>
+          </div>
         </div>
-    </footer>
+        <div class="swiper-slide">
+          <div class="client__card">
+            <img src="assets/client-4.jpg" alt="client" />
+            <div>
+              <p>
+                The mobile app they developed for our company exceeded our
+                expectations. Not only is it user-friendly, but it also helped
+                us connect with our customers on a whole new level. Their
+                attention to detail and commitment to delivering on time were
+                exceptional.
+              </p>
+              <h4>Harrison Rogers <span>Product Manager</span></h4>
+              <div class="client__ratings">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
 
-    <!-- load javascript after loading all html content -->
-    <script src="script/script.js"></script>
+  <section class="section__container blog__container" id="blog">
+    <p class="section__subheader">Blog Posts</p>
+    <h2 class="section__header">I Love To Write Articles</h2>
+    <div class="blog__grid">
+      <div class="blog__card">
+        <img src="assets/blog-1.jpg" alt="blog" />
+        <p>Case Study</p>
+        <h4>Turning Clicks into Conversions with PPC</h4>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog__card">
+        <img src="assets/blog-2.jpg" alt="blog" />
+        <p>Educational/How-To</p>
+        <h4>The Ultimate Guide to Website Accessibility</h4>
+        <a href="#">Read More</a>
+      </div>
+      <div class="blog__card">
+        <img src="assets/blog-3.jpg" alt="blog" />
+        <p>Trend Analysis</p>
+        <h4>2023 Web Design Trends: What's In and What's Out</h4>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </section>
 
+  <section class="section__container contact__container" id="contact">
+    <p class="section__subheader">Contact Me</p>
+    <h2 class="section__header">Get In Touch</h2>
+    <form action="/" class="contact__form">
+      <div class="input__row">
+        <input type="text" placeholder="First Name" />
+        <input type="text" placeholder="Last Name" />
+      </div>
+      <input type="text" placeholder="Email" />
+      <input type="text" placeholder="Description" />
+      <button class="btn">Submit</button>
+    </form>
+
+  </section>
+
+  <footer class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+          <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe
+                  style="height:100%;width:100%;border:0;" frameborder="0"
+                  src="https://www.google.com/maps/embed/v1/place?q=Sheffield,+UK&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+          </div><a class="googlemaps-made" href="https://kbj9qpmy.com/bp"
+              id="make-map-infor-mation">Internet Provider</a>
+          <style>
+              #embedded-map-display .text-marker {
+                  display: box;
+              }
+
+              .map-generator {
+                  max-width: 50%;
+                  max-height: 50%;
+                  background: none;
+              }
+         </style>
+      </div>
+      </div>
+      <div class="footer__col">
+        <h4>Services</h4>
+        <div class="footer__links">
+          <a href="#">Web Design</a>
+          <a href="#">App Design</a>
+          <a href="#">Web Development</a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Support</h4>
+        <div class="footer__links">
+          <a href="#">Contact</a>
+          <a href="#">My Blog</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Creating Digital Masterpiece. |All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
