@@ -335,12 +335,25 @@ nav {
 
 .project__grid {
   display: grid;
-  gap: 1rem;
+  margin-top: 4rem;
+  display: grid;
+  gap: 2rem 1rem;
+}
+
+.project_card .card-text{
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+
 }
 
 .project__card img {
   border-radius: 5px;
   cursor: pointer;
+  margin-bottom: 1rem;
+ 
+
+  
 }
 
 .service__grid {
@@ -578,6 +591,7 @@ nav {
 
   .project__grid {
     grid-template-columns: repeat(2, 1fr);
+    
   }
 
   .service__grid {
