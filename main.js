@@ -94,3 +94,11 @@ ScrollReveal().reveal(".blog__card", {
   ...scrollRevealOption,
   interval: 500,
 });
+
+
+const checkbox = document.querySelector("#checkbox");
+
+checkbox.addEventListener("change", () => {
+  // Toggle website theme
+  document.body.classList.toggle("dark");
+});
