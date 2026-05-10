@@ -102,3 +102,35 @@ checkbox.addEventListener("change", () => {
   // Toggle website theme
   document.body.classList.toggle("dark");
 });
+
+const contactForm = document.getElementById("contact-form");
+const contactStatus = document.getElementById("contact-status");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const firstName = formData.get("firstName")?.toString().trim();
+    const lastName = formData.get("lastName")?.toString().trim();
+    const email = formData.get("email")?.toString().trim();
+    const message = formData.get("description")?.toString().trim();
+
+    if (!firstName || !email || !message) {
+      contactStatus.textContent = "Please complete all required fields before submitting.";
+      contactStatus.className = "contact-status contact-status--error";
+      return;
+    }
+
+    const recipient = "hello@charlesagyemang.dev";
+    const subject = encodeURIComponent(`Contact request from ${firstName} ${lastName || ""}`);
+    const body = encodeURIComponent(`Name: ${firstName} ${lastName || ""}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+    contactStatus.textContent = "Opening your mail client to send the message...";
+    contactStatus.className = "contact-status contact-status--success";
+
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+
+    contactForm.reset();
+  });
+}

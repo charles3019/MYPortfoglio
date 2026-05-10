@@ -309,14 +309,15 @@
   <section class="section__container contact__container" id="contact">
     <p class="section__subheader">Contact Me</p>
     <h2 class="section__header">Get In Touch</h2>
-    <form action="/" class="contact__form">
+    <form id="contact-form" class="contact__form">
       <div class="input__row">
-        <input type="text" placeholder="First Name" />
-        <input type="text" placeholder="Last Name" />
+        <input type="text" name="firstName" placeholder="First Name" />
+        <input type="text" name="lastName" placeholder="Last Name" />
       </div>
-      <input type="text" placeholder="Email" />
-      <input type="text" placeholder="Description" />
-      <button class="btn">Submit</button>
+      <input type="email" name="email" placeholder="Email" />
+      <textarea name="description" placeholder="Description" rows="4"></textarea>
+      <button class="btn" type="submit">Submit</button>
+      <p id="contact-status" class="contact-status" aria-live="polite"></p>
     </form>
   </section>
 
