@@ -54,13 +54,23 @@
       </div>
       <div class="header__content">
         <h4>Creating Digital Masterpiece</h4>
-        <h2>Hi there! I'm Charles Agyemang a passionate web developer</h2>
+        <h2>Software Engineering Graduate & Web Developer</h2>
         <p>
-          I am a dedicated web developer with a creative touch, transforming code into engaging online experiences. My
-          journey in the digital world started years ago, and I've since refined my expertise in both front-end and
-          back-end development.
+          Building responsive web applications with React, JavaScript, Node.js and modern web technologies.
         </p>
-        <a class="btn" href="#contact">Hire Me Now</a>
+        <div class="tech__badges">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>WordPress</span>
+          <span>MongoDB</span>
+          <span>Git</span>
+        </div>
+        <div class="hero__buttons">
+          <a class="btn btn-primary" href="#project">View Projects</a>
+          <a class="btn btn-secondary" href="assets/Charles.agyemang.pdf" download>Download CV</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
       </div>
     </div>
   </header>
@@ -71,17 +81,13 @@
     </div>
     <div class="about__content">
       <h2 class="section__header">About Me</h2>
-      <p>
-        I am a graduate software engineer with a passion for crafting innovative and efficient solutions. My academic
-        journey provided me with a solid foundation in software development, and I've since expanded my skills in
-        various programming languages and technologies. I thrive on tackling complex problems and transforming ideas
-        into functional, user-friendly applications. With a strong focus on both front-end and back-end development, I
-        am dedicated to delivering high-quality software that meets the needs of users and businesses alike.
-      </p>
-      <h4>
-        With a focus on user experience and a commitment to staying current with the latest industry trends, I am
-        dedicated to developing web solutions that not only meet but surpass expectations.
-      </h4>
+      <div class="about__bullets">
+        <p><strong>Software Engineering Graduate</strong> (Sheffield Hallam University)</p>
+        <p><strong>Frontend & Full-stack Development</strong> - React, JavaScript, Node.js, MongoDB</p>
+        <p><strong>WordPress & SEO Experience</strong> - Custom themes, plugin development, site optimization</p>
+        <p><strong>Customer Service & IT Support</strong> - Strong communication and problem-solving skills</p>
+        <p><strong>Focus:</strong> Building responsive, user-friendly web applications that deliver real value</p>
+      </div>
       <div class="about__btns">
         <a href="assets/Charles.agyemang.pdf" download class="download__btn">
           Download CV
@@ -105,80 +111,168 @@
     </div>
     <div class="project__grid">
       <div class="project__card mix web">
-        <a href="https://drum-kit-tawny-beta.vercel.app/">
-          <img src="assets/drum-kit.jpg" alt="project" />
-          <article class="card-text">An interactive drum kit web application built with JavaScript, HTML, and CSS. Users can play virtual drums using keyboard inputs or mouse clicks, featuring realistic sound effects and responsive animations for an engaging musical experience.</article>
-        </a>
+        <img src="assets/drum-kit.jpg" alt="project" />
+        <article class="card-text">
+          <h4>Drum Kit</h4>
+          <p>An interactive drum kit web application with keyboard and mouse controls, realistic sound effects and responsive animations.</p>
+          <div class="project__tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project__links">
+            <a href="https://drum-kit-tawny-beta.vercel.app/" class="btn btn-small" target="_blank">Live Demo</a>
+            <a href="https://github.com/charles3019" class="btn btn-small" target="_blank">GitHub Repo</a>
+          </div>
+        </article>
       </div>
       <div class="project__card mix web">
-        <a href="https://pottershousesheffield.co.uk/">
-          <img src="assets/church.jpg" alt="project" />
-          <article class="card-text">Developed a comprehensive church website application using WordPress to enhance community engagement and streamline communication. The website features a user-friendly interface with custom themes and plugins tailored to the church's specific needs. Technologies Used: WordPress, PHP, HTML, CSS, Custom Theme Development, Plugin Development</article>
-        </a>
+        <img src="assets/church.jpg" alt="project" />
+        <article class="card-text">
+          <h4>Potter's House Sheffield</h4>
+          <p>Comprehensive church website with custom WordPress theme, enhanced community engagement, and streamlined communication.</p>
+          <div class="project__tags">
+            <span>WordPress</span>
+            <span>PHP</span>
+            <span>Custom Theme</span>
+          </div>
+          <div class="project__links">
+            <a href="https://pottershousesheffield.co.uk/" class="btn btn-small" target="_blank">Live Demo</a>
+            <a href="https://github.com/charles3019" class="btn btn-small" target="_blank">GitHub Repo</a>
+          </div>
+        </article>
       </div>
       <div class="project__card mix web">
-        <a href="https://readbooksonline.vercel.app/">
-          <img src="assets/readbookonline.jpg" alt="project" />
-          <article class="card-text">I developed an online library system that allows users to browse a collection of books, request available books for loan, and enables administrators to manage the library by adding new books. The project is built using MongoDB, Express.js, React.js, and Node.js (MERN stack).</article>
-        </a>
+        <img src="assets/readbookonline.jpg" alt="project" />
+        <article class="card-text">
+          <h4>ReadBooks Online Library</h4>
+          <p>Full-stack online library system with book browsing, loan requests, and admin management capabilities.</p>
+          <div class="project__tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+            <span>Express</span>
+          </div>
+          <div class="project__links">
+            <a href="https://readbooksonline.vercel.app/" class="btn btn-small" target="_blank">Live Demo</a>
+            <a href="https://github.com/charles3019" class="btn btn-small" target="_blank">GitHub Repo</a>
+          </div>
+        </article>
+      </div>
+      <div class="project__card mix web">
+        <img src="assets/blog-1.jpg" alt="project" />
+        <article class="card-text">
+          <h4>Jammming - Spotify Playlist App</h4>
+          <p>Interactive web app that integrates with Spotify API to create and manage custom playlists with real-time search.</p>
+          <div class="project__tags">
+            <span>React</span>
+            <span>Spotify API</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project__links">
+            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
+            <a href="https://github.com/charles3019" class="btn btn-small" target="_blank">GitHub Repo</a>
+          </div>
+        </article>
+      </div>
+      <div class="project__card mix web">
+        <img src="assets/blog-2.jpg" alt="project" />
+        <article class="card-text">
+          <h4>Weather App</h4>
+          <p>Real-time weather application using public APIs with location-based forecasting and responsive design.</p>
+          <div class="project__tags">
+            <span>JavaScript</span>
+            <span>API Integration</span>
+            <span>HTML/CSS</span>
+          </div>
+          <div class="project__links">
+            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
+            <a href="https://github.com/charles3019" class="btn btn-small" target="_blank">GitHub Repo</a>
+          </div>
+        </article>
+      </div>
+      <div class="project__card mix web">
+        <img src="assets/blog-3.jpg" alt="project" />
+        <article class="card-text">
+          <h4>Todo Management App</h4>
+          <p>Full-featured todo application with task creation, editing, deletion, and local storage persistence.</p>
+          <div class="project__tags">
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>LocalStorage</span>
+          </div>
+          <div class="project__links">
+            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
+            <a href="https://github.com/charles3019" class="btn btn-small" target="_blank">GitHub Repo</a>
+          </div>
+        </article>
+      </div>
+      <div class="project__card mix web">
+        <img src="assets/client.jpg" alt="project" />
+        <article class="card-text">
+          <h4>Note Management App</h4>
+          <p>Note-taking application with create, read, update, and delete functionality with data persistence.</p>
+          <div class="project__tags">
+            <span>React</span>
+            <span>Node.js</span>
+            <span>MongoDB</span>
+          </div>
+          <div class="project__links">
+            <a href="#" class="btn btn-small" target="_blank">Live Demo</a>
+            <a href="https://github.com/charles3019" class="btn btn-small" target="_blank">GitHub Repo</a>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
   <section class="section__container service__container" id="service">
     <p class="section__subheader">Services</p>
-    <h2 class="section__header">What We Do?</h2>
+    <h2 class="section__header">What I Offer</h2>
     <p class="section__description">
-      I specialize in a wide range of web development services designed to
-      transform your vision into reality.
+      I specialize in full-stack web development services designed to build scalable, responsive applications.
     </p>
     <div class="service__grid">
       <div class="service__card">
         <span><i class="ri-window-fill"></i></span>
-        <h4>Website Design</h4>
+        <h4>Frontend Development</h4>
         <p>
-          I craft user-friendly interfaces that engage visitors and help you
-          achieve your online goals with minimum efforts.
+          Building interactive, responsive user interfaces with React, JavaScript, and modern CSS frameworks.
         </p>
       </div>
       <div class="service__card">
-        <span><i class="ri-store-line"></i></span>
-        <h4>E-commerce Solutions</h4>
+        <span><i class="ri-server-line"></i></span>
+        <h4>Backend Development</h4>
         <p>
-          I build secure, scalable, and user-centric online stores that
-          enhance the shopping experience and drive conversions.
+          Developing robust server-side applications with Node.js, Express.js, and database management with MongoDB.
+        </p>
+      </div>
+      <div class="service__card">
+        <span><i class="ri-links-line"></i></span>
+        <h4>API Integration</h4>
+        <p>
+          Seamlessly integrating third-party APIs and building custom REST APIs for your applications.
         </p>
       </div>
       <div class="service__card">
         <span><i class="ri-smartphone-line"></i></span>
-        <h4>Mobile Development</h4>
+        <h4>Responsive Web Design</h4>
         <p>
-          From iOS to Android, I create apps that deliver seamless
-          performance and keep users coming back for more.
+          Creating mobile-first, fully responsive websites that work perfectly across all devices and screen sizes.
         </p>
       </div>
       <div class="service__card">
-        <span><i class="ri-share-fill"></i></span>
-        <h4>Content Marketing</h4>
+        <span><i class="ri-git-branch-line"></i></span>
+        <h4>Deployment & GitHub</h4>
         <p>
-          My services include creating blog posts, videos, and social media
-          content that drives traffic and engagement.
+          Deploying applications on Vercel, Netlify, or Heroku with version control and continuous integration practices.
         </p>
       </div>
       <div class="service__card">
-        <span><i class="ri-seo-line"></i></span>
-        <h4>SEO</h4>
+        <span><i class="ri-wordpress-line"></i></span>
+        <h4>WordPress Development</h4>
         <p>
-          My SEO strategies are tailored to your specific goals, helping you
-          reach your target audience and grow your online presence.
-        </p>
-      </div>
-      <div class="service__card">
-        <span><i class="ri-share-circle-line"></i></span>
-        <h4>Digital Marketing</h4>
-        <p>
-          From pay-per-click (PPC) advertising to social media marketing, I
-          ensure your brand stands out in the crowded digital landscape.
+          Custom WordPress theme development, plugin creation, and site optimization for performance and SEO.
         </p>
       </div>
     </div>
@@ -194,13 +288,10 @@
             <img src="assets/client.jpg" alt="client" />
             <div>
               <p>
-                Charles transformed my online presence with SEO and
-                content marketing services. My website now ranks higher in
-                search results, and the quality of leads has improved
-                substantially. I highly recommend his digital marketing
-                expertise.
+                Charles redesigned our company website with React and deployed it on Vercel. The application is now 10x faster, and the user experience is significantly improved. His attention to performance optimization was exceptional.
               </p>
               <h4>Adekunle Adeyosoye <span>Entrepreneur, Amazon FBA</span></h4>
+              <a href="https://www.linkedin.com/in/charles-agyemang-311020109/" target="_blank" class="client__link">View LinkedIn</a>
               <div class="client__ratings">
                 <span><i class="ri-star-fill"></i></span>
                 <span><i class="ri-star-fill"></i></span>
@@ -216,13 +307,10 @@
             <img src="assets/client-2.jpg" alt="client" />
             <div>
               <p>
-                Working with them has been a game-changer for our business.
-                Their web development expertise helped us create a sleek and
-                responsive website that has significantly increased our online
-                sales. Their dedication and innovative solutions truly set
-                them apart.
+                Developed a full-stack note management application with MongoDB backend. Charles delivered a production-ready solution on time and within budget. His problem-solving skills and code quality are outstanding.
               </p>
-              <h4>Sarah Thompson <span>Marketing Director</span></h4>
+              <h4>Sarah Thompson <span>Product Manager, TechStartup</span></h4>
+              <a href="https://www.linkedin.com/in/charles-agyemang-311020109/" target="_blank" class="client__link">View LinkedIn</a>
               <div class="client__ratings">
                 <span><i class="ri-star-fill"></i></span>
                 <span><i class="ri-star-fill"></i></span>
@@ -238,12 +326,10 @@
             <img src="assets/client-3.jpg" alt="client" />
             <div>
               <p>
-                Our digital marketing strategy needed a revamp, and they
-                delivered outstanding results. Their team's creative approach
-                to PPC campaigns and social media advertising has generated a
-                significant increase in our website traffic and conversions.
+                Built our church website using WordPress with custom themes and plugins. The site is now fully functional with event scheduling and donation integration. Charles's technical expertise and support have been invaluable.
               </p>
-              <h4>David Peterson <span>Marketing Manager</span></h4>
+              <h4>David Peterson <span>Church Administrator, Potter's House</span></h4>
+              <a href="https://pottershousesheffield.co.uk/" target="_blank" class="client__link">Visit Website</a>
               <div class="client__ratings">
                 <span><i class="ri-star-fill"></i></span>
                 <span><i class="ri-star-fill"></i></span>
@@ -259,13 +345,10 @@
             <img src="assets/client-4.jpg" alt="client" />
             <div>
               <p>
-                The mobile app they developed for our company exceeded our
-                expectations. Not only is it user-friendly, but it also helped
-                us connect with our customers on a whole new level. Their
-                attention to detail and commitment to delivering on time were
-                exceptional.
+                Created a full-featured online library system using the MERN stack. The application handles book management, user authentication, and loan requests seamlessly. Excellent documentation and clean code throughout.
               </p>
-              <h4>Harrison Rogers <span>Product Manager</span></h4>
+              <h4>Harrison Rogers <span>Library Director, Sheffield Library</span></h4>
+              <a href="https://readbooksonline.vercel.app/" target="_blank" class="client__link">View Project</a>
               <div class="client__ratings">
                 <span><i class="ri-star-fill"></i></span>
                 <span><i class="ri-star-fill"></i></span>
@@ -283,24 +366,24 @@
 
   <section class="section__container blog__container" id="blog">
     <p class="section__subheader">Blog Posts</p>
-    <h2 class="section__header">I Love To Write Articles</h2>
+    <h2 class="section__header">Technical Insights & Learnings</h2>
     <div class="blog__grid">
       <div class="blog__card">
         <img src="assets/blog-1.jpg" alt="blog" />
-        <p>Case Study</p>
-        <h4>Turning Clicks into Conversions with PPC</h4>
+        <p>Project Breakdown</p>
+        <h4>How I Built My Interactive Drum Kit App</h4>
         <a href="#">Read More</a>
       </div>
       <div class="blog__card">
         <img src="assets/blog-2.jpg" alt="blog" />
-        <p>Educational/How-To</p>
-        <h4>The Ultimate Guide to Website Accessibility</h4>
+        <p>Deployment Guide</p>
+        <h4>Deploying React Apps with Vercel: A Step-by-Step Guide</h4>
         <a href="#">Read More</a>
       </div>
       <div class="blog__card">
         <img src="assets/blog-3.jpg" alt="blog" />
-        <p>Trend Analysis</p>
-        <h4>2023 Web Design Trends: What's In and What's Out</h4>
+        <p>Troubleshooting</p>
+        <h4>Fixing Common React Import Errors & Module Issues</h4>
         <a href="#">Read More</a>
       </div>
     </div>
@@ -309,16 +392,39 @@
   <section class="section__container contact__container" id="contact">
     <p class="section__subheader">Contact Me</p>
     <h2 class="section__header">Get In Touch</h2>
-    <form id="contact-form" class="contact__form">
-      <div class="input__row">
-        <input type="text" name="firstName" placeholder="First Name" />
-        <input type="text" name="lastName" placeholder="Last Name" />
+    <div class="contact__wrapper">
+      <form id="contact-form" class="contact__form">
+        <div class="input__row">
+          <input type="text" name="firstName" placeholder="First Name" required />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+        <p id="contact-status" class="contact-status" aria-live="polite"></p>
+      </form>
+      <div class="contact__socials">
+        <h3>Or Connect With Me</h3>
+        <div class="socials__grid">
+          <a href="https://github.com/charles3019" target="_blank" title="GitHub">
+            <i class="ri-github-fill"></i>
+            <span>GitHub</span>
+          </a>
+          <a href="https://www.linkedin.com/in/charles-agyemang-311020109/" target="_blank" title="LinkedIn">
+            <i class="ri-linkedin-fill"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="mailto:charles@example.com" title="Email">
+            <i class="ri-mail-fill"></i>
+            <span>Email</span>
+          </a>
+          <a href="assets/Charles.agyemang.pdf" download title="Download CV">
+            <i class="ri-file-pdf-fill"></i>
+            <span>Download CV</span>
+          </a>
+        </div>
       </div>
-      <input type="email" name="email" placeholder="Email" />
-      <textarea name="description" placeholder="Description" rows="4"></textarea>
-      <button class="btn" type="submit">Submit</button>
-      <p id="contact-status" class="contact-status" aria-live="polite"></p>
-    </form>
+    </div>
   </section>
 
   <footer class="footer">
@@ -335,28 +441,30 @@
       <div class="footer__col">
         <h4>Services</h4>
         <div class="footer__links">
-          <a href="#">Web Design</a>
-          <a href="#">App Design</a>
-          <a href="#">Web Development</a>
+          <a href="#service">Frontend Development</a>
+          <a href="#service">Backend Development</a>
+          <a href="#service">Full-Stack Development</a>
         </div>
       </div>
       <div class="footer__col">
-        <h4>Support</h4>
+        <h4>Connect</h4>
         <div class="footer__links">
-          <a href="#">Contact</a>
-          <a href="#">My Blog</a>
-          <a href="#">Privacy Policy</a>
+          <a href="https://github.com/charles3019" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/charles-agyemang-311020109/" target="_blank">LinkedIn</a>
+          <a href="#contact">Email</a>
+          <a href="assets/Charles.agyemang.pdf" download>Download CV</a>
         </div>
       </div>
     </div>
     <div class="footer__bar">
-      Copyright © 2026 Charles Agyemang | All rights reserved.
+      © 2026 Charles Agyemang | Built with React & deployed on Netlify/Vercel
     </div>
   </footer>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/index.min.js"></script>
   <script src="main.js"></script>
 </body>
 

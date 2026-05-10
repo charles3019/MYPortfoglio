@@ -124,6 +124,11 @@ const contactForm = document.getElementById("contact-form");
 const contactStatus = document.getElementById("contact-status");
 
 if (contactForm) {
+  // Initialize EmailJS
+  // NOTE: Get your credentials from https://www.emailjs.com/
+  // Replace these with your actual credentials
+  emailjs.init("YOUR_PUBLIC_KEY_HERE"); // Get from EmailJS dashboard
+
   contactForm.addEventListener("submit", (event) => {
     event.preventDefault();
 
@@ -131,7 +136,7 @@ if (contactForm) {
     const firstName = formData.get("firstName")?.toString().trim();
     const lastName = formData.get("lastName")?.toString().trim();
     const email = formData.get("email")?.toString().trim();
-    const message = formData.get("description")?.toString().trim();
+    const message = formData.get("message")?.toString().trim();
 
     if (!firstName || !email || !message) {
       contactStatus.textContent = "Please complete all required fields before submitting.";
@@ -139,14 +144,43 @@ if (contactForm) {
       return;
     }
 
-    const recipient = "agyemangc96@gmail.com";
-    const subject = encodeURIComponent(`Contact request from ${firstName} ${lastName || ""}`);
-    const body = encodeURIComponent(`Name: ${firstName} ${lastName || ""}\nEmail: ${email}\n\nMessage:\n${message}`);
-
-    contactStatus.textContent = "Opening your mail client to send the message...";
+    // Show sending status
+    contactStatus.textContent = "Sending your message...";
     contactStatus.className = "contact-status contact-status--success";
 
-    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    // Send email using EmailJS
+    // Replace SERVICE_ID and TEMPLATE_ID with your EmailJS credentials
+    emailjs
+      .send("SERVICE_ID_HERE", "TEMPLATE_ID_HERE", {
+        from_name: `${firstName} ${lastName || ""}`,
+        from_email: email,
+        to_email: "agyemangc96@gmail.com",
+        message: message,
+        reply_to: email,
+      })
+      .then(
+        (response) => {
+          contactStatus.textContent =
+            "✓ Message sent successfully! I'll get back to you soon.";
+          contactStatus.className =
+            "contact-status contact-status--success";
+          contactForm.reset();
+          
+          // Clear success message after 5 seconds
+          setTimeout(() => {
+            contactStatus.textContent = "";
+          }, 5000);
+        },
+        (error) => {
+          console.error("EmailJS Error:", error);
+          contactStatus.textContent =
+            "✗ Failed to send message. Please try again or email directly.";
+          contactStatus.className =
+            "contact-status contact-status--error";
+        }
+      );
+  });
+}
 
     contactForm.reset();
   });

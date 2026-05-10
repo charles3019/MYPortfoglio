@@ -229,6 +229,57 @@ nav {
   border-radius: 999px;
 }
 
+.header__content {
+  max-width: 680px;
+}
+
+.tech__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.tech__badges span {
+  padding: 0.5rem 1.1rem;
+  font-size: 0.9rem;
+  background: rgba(248, 242, 8, 0.1);
+  border: 1px solid rgba(248, 242, 8, 0.3);
+  border-radius: 999px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn-primary {
+  padding: 1rem 2rem !important;
+  background-image: var(--gradient) !important;
+  color: var(--secondary-color) !important;
+  border-radius: 999px !important;
+}
+
+.btn-secondary {
+  padding: 1rem 2rem !important;
+  background: transparent !important;
+  border: 2px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  border-radius: 999px !important;
+}
+
+.btn-secondary:hover {
+  background-image: var(--gradient) !important;
+  border-color: transparent !important;
+  color: var(--secondary-color) !important;
+}
+
 .about__container,
 .service__grid,
 .blog__grid,
@@ -253,6 +304,22 @@ nav {
   margin-bottom: 1.5rem;
   color: var(--text-light);
   line-height: 1.8;
+}
+
+.about__bullets {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.about__bullets p {
+  padding: 0.75rem 0;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+.about__bullets strong {
+  color: var(--white);
 }
 
 .about__content h4 {
@@ -398,6 +465,48 @@ nav {
   color: var(--text-light);
 }
 
+.project__card h4 {
+  margin-bottom: 0.75rem;
+  font-size: 1.15rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.project__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1rem 0;
+}
+
+.project__tags span {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  background: rgba(248, 242, 8, 0.08);
+  border: 1px solid rgba(248, 242, 8, 0.2);
+  border-radius: 999px;
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.project__links {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1.2rem;
+}
+
+.btn-small {
+  padding: 0.6rem 1.2rem !important;
+  font-size: 0.85rem !important;
+  background-image: var(--gradient) !important;
+  color: var(--secondary-color) !important;
+  border-radius: 6px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 0.5rem;
+}
+
 .service__grid {
   grid-template-columns: 1fr;
 }
@@ -476,6 +585,24 @@ nav {
   color: var(--text-light);
 }
 
+.client__link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.9rem;
+  background: rgba(248, 242, 8, 0.1);
+  border: 1px solid rgba(248, 242, 8, 0.3);
+  border-radius: 6px;
+  color: var(--primary-color);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.client__link:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+}
+
 .blog__grid {
   grid-template-columns: 1fr;
 }
@@ -508,6 +635,58 @@ nav {
   margin: 2rem auto 0;
   display: grid;
   gap: 1rem;
+}
+
+.contact__wrapper {
+  display: grid;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact__socials {
+  text-align: center;
+}
+
+.contact__socials h3 {
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--white);
+}
+
+.socials__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.socials__grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1.2rem 1rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  color: var(--text-light);
+  transition: all 0.3s ease;
+}
+
+.socials__grid a:hover {
+  background: rgba(248, 242, 8, 0.1);
+  border-color: rgba(248, 242, 8, 0.3);
+  color: var(--primary-color);
+  transform: translateY(-4px);
+}
+
+.socials__grid a i {
+  font-size: 1.8rem;
+}
+
+.socials__grid a span {
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .contact__form .input__row {
