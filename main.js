@@ -19,6 +19,14 @@ navLinks.addEventListener("click", (e) => {
 
 const mixer = mixitup(".project__grid");
 
+const filterButtons = document.querySelectorAll(".project__btn");
+filterButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    filterButtons.forEach((btn) => btn.classList.remove("mixitup-control-active"));
+    button.classList.add("mixitup-control-active");
+  });
+});
+
 const swiper = new Swiper(".swiper", {
   loop: true,
   pagination: {
@@ -42,7 +50,7 @@ ScrollReveal().reveal(".header__content h4", {
   delay: 500,
 });
 
-ScrollReveal().reveal(".header__content h1", {
+ScrollReveal().reveal(".header__content h2", {
   ...scrollRevealOption,
   delay: 1000,
 });
@@ -95,6 +103,15 @@ ScrollReveal().reveal(".blog__card", {
   interval: 500,
 });
 
+ScrollReveal().reveal(".client__card", {
+  ...scrollRevealOption,
+  interval: 300,
+});
+
+ScrollReveal().reveal(".contact__container", {
+  ...scrollRevealOption,
+  delay: 300,
+});
 
 const checkbox = document.querySelector("#checkbox");
 
@@ -122,7 +139,7 @@ if (contactForm) {
       return;
     }
 
-    const recipient = "hello@charlesagyemang.dev";
+    const recipient = "agyemangc96@gmail.com";
     const subject = encodeURIComponent(`Contact request from ${firstName} ${lastName || ""}`);
     const body = encodeURIComponent(`Name: ${firstName} ${lastName || ""}\nEmail: ${email}\n\nMessage:\n${message}`);
 

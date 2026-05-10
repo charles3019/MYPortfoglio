@@ -516,7 +516,7 @@ nav {
 }
 
 .contact__form input,
-  .contact__form textarea {
+.contact__form textarea {
   width: 100%;
   padding: 1rem 1.1rem;
   font-size: 1rem;
@@ -528,8 +528,8 @@ nav {
 }
 
 .contact__form textarea {
+  min-height: 150px;
   resize: vertical;
-  min-height: 140px;
 }
 
 .contact__form input::placeholder,
@@ -548,7 +548,44 @@ nav {
 .contact-status {
   margin-top: 1rem;
   font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.contact-status--success {
+  color: #b8ff7a;
+}
+
+.contact-status--error {
+  color: #ff7a7a;
+}
+
+body.dark {
+  background: #02040b;
+}
+
+body.dark .nav__bar,
+body.dark .nav__links,
+body.dark .footer,
+body.dark .banner__card,
+body.dark .project__card,
+body.dark .service__card,
+body.dark .client__card,
+body.dark .blog__card {
+  background: rgba(2, 7, 23, 0.96);
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+body.dark .header__content h2,
+body.dark .section__header,
+body.dark .client__card h4,
+body.dark .blog__card h4,
+body.dark .service__card h4 {
   color: var(--white);
+}
+
+body.dark .contact__form input,
+body.dark .contact__form textarea {
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .contact-status--success {
